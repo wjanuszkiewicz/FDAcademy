@@ -1,26 +1,46 @@
 body * {
   outline: 1px solid lightgrey;
 }
-.conteiner{
+@media (min-width: 768px){
+  .team-box{
+    min-width: 750px;
+  }
+}
+@media (min-width: 668px){
+  .team-box{
+    min-width: 650px;
+  }
+}
+@media (min-width: 400px){
+  .team-box{
+    min-width: 380px;
+  }
+}
+@media (min-width: 300px){
+  .team-box{
+    min-width: 280px;
+  }
+}
+@media (min-width: 200px){
+  .team-box{
+    min-width: 180px;
+  }
+}
+.container{
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 0;
 }
 .header{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
 }
 .logo-head{
-  max-width: 200px ;
-  max-height: 92px;
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
+  flex-wrap: wrap;
   }
-
-  .logoimage{
+  .logo-image{
     max-width: 100px;
     max-height: 90px;
   }
@@ -31,14 +51,11 @@ body * {
     color: #fb9c06;
     font-family: sans-serif;
   }
-  .logotext{
-    width: 80px;
-    height: 70px;
+  .logo-text{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    margin: 0 0 15px;
   }
   .rabbit{
     font-size: 25px;
@@ -46,13 +63,36 @@ body * {
     font-family: fantasy;
     text-transform: uppercase;
   }
-  .navigate_link{
-    margin: 0 15px;
+  .navigate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navigate_link_last{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    font-size: 18px;
+    font-family: 'Calibri Regular';
+    color: #9e9b9b;
+}
+  .navigate_link{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Calibri Regular';
+    color: #9e9b9b;
   }
   .imageicons{
     max-width: 35px;
     max-height: 35px;
+    margin-bottom: 5px;
   }
   .slider{
     border-top: 3px solid #fcba50;
@@ -62,8 +102,6 @@ body * {
     background-size: cover;
   }
   .slider-box{
-    max-width: 1200px;
-    margin: 0 auto;
     height: 100%;
     font-size: 24px;
     display: flex;
@@ -87,18 +125,18 @@ body * {
     font-family: fantasy;
     text-transform: uppercase;
   }
-  .infolorem{
-    font-size: 0;
+  .info-lorem{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
-  .firstcolumn{
+  .column{
     font-size: 15px;
     max-width: 270px;
     max-height: 400px;
   }
-  .firsttext{
+  .lorem-text{
     margin: 30px 0 0 0 ;
     font-family: 'Calibri Regular';
     font-weight: bold;
@@ -106,101 +144,34 @@ body * {
     line-height: 150%;
     word-spacing: 3px;
   }
-  .firstread{
+  .lorem-read{
+    display: block;
+    text-align: right;
     text-decoration: none;
     color: #ffac00;
     font-style: oblique;
     font-size: 17px;
     font-family: 'Calibri';
-    margin-left: 185px;
   }
-  .secondcolumn{
-    font-size: 15px;
-    max-width: 270px;
-    max-height: 400px;
-  }
-  .secondtext{
-    margin: 30px 0 0 0 ;
-    font-family: 'Calibri Regular';
-    font-weight: bold;
-    text-align: left;
-    line-height: 150%;
-    word-spacing: 3px;
-  }
-  .secondread{
-    text-decoration: none;
-    color: #ffac00;
-    font-style: oblique;
-    font-size: 17px;
-    font-family: 'Calibri';
-    margin-left: 185px;
-  }
-  .thirdcolumn{
-    font-size: 15px;
-    max-width: 270px;
-    max-height: 400px;
-  }
-  .thirdtext{
-    margin: 30px 0 0 0 ;
-    font-family: 'Calibri Regular';
-    font-weight: bold;
-    text-align: left;
-    line-height: 150%;
-    word-spacing: 3px;
-  }
-  .thirdread{
-    text-decoration: none;
-    color: #ffac00;
-    font-style: oblique;
-    font-size: 17px;
-    font-family: 'Calibri';
-    margin-left: 185px;
-  }
-  .fourthcolumn{
-    font-size: 15px;
-    max-width: 270px;
-    max-height: 400px;
-  }
-  .fourthtext{
-    margin: 30px 0 0 0 ;
-    font-family: 'Calibri Regular';
-    font-weight: bold;
-    text-align: left;
-    line-height: 150%;
-    word-spacing: 3px;
-  }
-  .fourthread{
-    text-decoration: none;
-    color: #ffac00;
-    font-style: oblique;
-    font-size: 17px;
-    font-family: 'Calibri';
-    margin-left: 185px;
-  }
-  .conteinermeet{
-    max-width: 1200px;
-    margin: 0 auto;
-    font-size: 0;
-    text-align: center;
-  }
-  .meet,.sendamessage{
-    display: inline-block;
-    margin: 40px 0 15px 0;
+  .meet,.send-message{
     font-size: 45px;
     font-family: 'St Marie Thin';
     font-weight: 590;
     color: #ff9c00;
+    text-align: center;
+  }
+  .meet-team,.send-message-text{
+    display: inline-block;
     border-bottom: 2px solid #ff9c00;
   }
-  .teamusers{
-    display: flex;
-    justify-content: space-between;
+  .team-box{
+   display: inline-block;
+   width: 33%;
+   overflow: hidden;
+   vertical-align: top;
   }
-  .hoof,.nibs,.squawk{
-    max-width: 294px;
-    
-  }
-  .hooftop,.nibstop,.squawktop{
+  .team-top {
+    margin: 0;
     font-size: 22px;
     text-align: center;
     font-family: 'Calibri Light';
@@ -208,16 +179,25 @@ body * {
     font-weight: 600;
     word-spacing: 2px;
   }
-  .hooftop span,.nibstop span,.squawktop span{
+  .team-top span{
     color: #fb9c06;
   }
-  .hoofbottom,.nibsbottom,.squawkbottom{
-    margin-left: 30px;
+  .team-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .team-bottom{
+    margin-inline-start: 51px;
+    margin-inline-end:51px;
     font-size: 15px;
     font-family: 'Calibri Light';
     font-weight: 600;
     line-height: 150%;
     word-spacing: 2px;
+    
   }
   .sendmessage{
     text-align: center;
@@ -298,16 +278,11 @@ body * {
       color:#fff;
       background-color: #fb9c06;
       width: 100%;
-      height: 70px;
+      height: 100%;
       margin-top: 50px;
+      padding: 15px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       border-bottom: 3px solid #cc830f;
     }
-
-  
- 
- 
-
-  
