@@ -1,4 +1,4 @@
-body {
+body  {
   outline: 1px solid lightgrey;
   margin: 0;
 }
@@ -9,8 +9,7 @@ body {
 }
 .header_container{
   width: 100%;
-  height: 100px;
-  background-color: rgba($color: #676566, $alpha: 0.4);
+  background-color: rgba($color: #676566, $alpha: 0.6);
 }
 .header{
   width: 100%;
@@ -18,7 +17,54 @@ body {
   background: url('./img/introbread.jpg') center no-repeat;
   background-size: cover;
 }
-.header_logo{
-  font-family: Scriptina;
-  font-size: 30px;
+.logo_nav{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  
 }
+.header_logo{
+  font-family: 'Scriptina Regular';
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 10px;
+}
+.nav{
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Alegreya Regular';
+  letter-spacing: 3px;
+  word-spacing: 30px;
+}
+.nav:nth-child(2n){
+  padding: 0;
+}
+.nav_icons{
+  padding: 10px 0 10px 0;
+  margin-right: 20px;
+}
+.nav_icons:nth-child(3){
+  margin-right: 0;
+}
+.intro{
+display: inline-block;
+margin: 0 auto;
+}
+.intro_line{
+  font-family: 'Playfair Display';
+  font-size: 92px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing:10px;
+}
+.intro_line_line{
+  font-family: 'Proxima Nova Regular';
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
