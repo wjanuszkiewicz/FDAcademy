@@ -1,4 +1,4 @@
-body  {
+body {
   outline: 1px solid lightgrey;
   margin: 0;
 }
@@ -10,12 +10,8 @@ body  {
 .header_container{
   width: 100%;
   background-color: rgba($color: #676566, $alpha: 0.6);
-}
-.header{
-  width: 100%;
-  height: 100vh;
-  background: url('./img/introbread.jpg') center no-repeat;
-  background-size: cover;
+  position: absolute;
+  top: 0;
 }
 .logo_nav{
   display: flex;
@@ -51,8 +47,16 @@ body  {
   margin-right: 0;
 }
 .intro{
-display: inline-block;
-margin: 0 auto;
+  width: 100%;
+  height: 1000px;
+  background-image: url('./img/introbread.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
 }
 .intro_line{
   font-family: 'Playfair Display';
