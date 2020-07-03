@@ -1,5 +1,6 @@
-body * {
+body {
   outline: 1px solid lightgrey;
+  margin: 0;
 }
 .container{
   max-width: 1200px;
@@ -10,6 +11,7 @@ body * {
   background-color: rgba($color: #676566, $alpha: 0.6);
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 .logo_nav{
   display: flex;
@@ -65,6 +67,9 @@ body * {
 }
 .intro_content{
   z-index: 1;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 .intro_line{
   font-family: 'Playfair Display';
@@ -74,25 +79,22 @@ body * {
   letter-spacing:10px;
 }
 .intro_img{
-  padding-top: 56px;
+  margin-top: 56px;
 }
 .intro_line_line{
   max-width: 700px;
-  margin: 0 auto;
   font-family: 'Proxima Nova Regular';
   font-size: 24px;
   font-weight: 400;
   color: #fff;
   letter-spacing: 5px;
   line-height: 36px;
-  padding-top: 69px;
+  margin-top: 69px;
 }
 .our_menu{
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  width: 200px;
-  padding: 20px 0 20px 0;
+  margin-top: 69px;
+  padding: 20px 50px;
+  border: none;
   color: #ffffff;
   font-family: 'Alegreya';
   font-weight: 700;
@@ -100,4 +102,27 @@ body * {
   text-transform: uppercase;
   letter-spacing: 4.2px;
   background-color: rgba($color: #676566, $alpha: 0.6);
+  z-index: 1;
+}
+.border_line{
+  box-shadow: 0px 15px 0px 0px #ffffff ;
+}
+.border_sphere{
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: -50px;
+}
+.second_page{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/page2background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
