@@ -105,7 +105,7 @@ body {
   z-index: 1;
 }
 .border_line{
-  box-shadow: 0px 15px 0px 0px #ffffff ;
+ height: 10px;
 }
 .border_sphere{
 
@@ -125,4 +125,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.small_bread{
+  max-width: 50px;
+  max-height: 45px;
 }
