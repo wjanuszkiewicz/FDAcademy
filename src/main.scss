@@ -126,12 +126,123 @@ body {
   background-position: center;
   background-size: cover;
 }
-.small_img_bread{
-  width: 75%;
-}
 .small_bread{
-  margin-top: 30px;
   max-width: 50px;
   max-height: 45px;
-  float: right;
+  position: absolute;
+  top:104%;
+  left: 75%;
+  
+}
+.small_container_bread{
+  height: 80px;
+}
+.shef_page{
+  font-family: 'Alegreya';
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.shef_content{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.art_line{
+  font-size: 48px;
+  font-weight: bold;
+  color: #56534c;
+}
+.create_line{
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a47d5e;
+  letter-spacing: 1px;
+}
+.info_line{
+  margin-top: 70px;
+  font-family: 'Proxima Nova Regular';
+  font-size: 14px;
+  font-weight: 600;
+  color: #56534c;
+  max-width: 490px;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 1.4px;
+}
+.chef_cook{
+  margin-top: 45px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #56534c;
+}
+.shef_line{
+  margin-top: 49px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+  width: 100%;
+}
+.benito{
+  font-size: 24px;
+  color: #56534c;
+  font-weight: 500;
+  padding: 20px 20px;
+  border-bottom: 1px solid #d7d5ca;
+  border-top: 1px solid #d7d5ca;
+}
+.unique_line{
+margin-top: 45px;
+max-width: 400px;
+width: 100%;
+height: 100px;
+position: relative;
+display: inline-block;
+}
+.first_simbol,.second_simbol{
+  font-size: 60px;
+  font-family: 'Times New Roman';
+  color: #56534c;
+  opacity: 0.5;
+}
+.first_simbol{
+  position: absolute;
+transform: rotate(-180deg);
+}
+.second_simbol{
+  position: absolute;
+  top:100%;
+  left: 96%;
+  margin-top: -34px;
+  margin-left: -15px;
+transform: rotateX(-180deg);
+}
+.text_unique{
+  position: absolute;
+  margin-top: -30px;
+  margin-left: -115px;
+  top: 50%;
+  left: 50%;
+  font-family: 'Scriptina';
+  color: #a47d5e;
+  font-size: 24px;
+  line-height: 30px;
+  max-width: 230px;
+  text-align: center;
+}
+.tastes_images{
+  max-width: 620px;
+  max-height: 520px;
+  width: 100%;
+  height: 100%;
+}
+.bg_layer,.bg_layer2,.bg_layer3,.bg_layer4{
+  max-width: 295px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
 }
