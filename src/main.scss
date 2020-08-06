@@ -1,4 +1,102 @@
-body * {
-  outline: 1px solid lightgrey;
+body,h1{
+  margin: 0;
+  font-family: 'Montserrat';
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+                          /*intro*/
+
+.intro__page{
+  background: url('./img/intropage/bgimageintro.jpg') no-repeat center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+                      /*header nav*/
+
+.header{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+.mogo__logo{
+  display: inline-block;
+  padding-top: 28px;
+  font-size: 30px;
+  font-weight: 700;
+}
+nav{
+margin-top: 40px;
+}
+.mogo__nav{
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 55px;
+  padding: 10px 0 10px 0;
+}
+.mogo__nav:hover{
+  color: #fce38a;
+  border-bottom: #fce38a solid 3px;
+  transition: color, border .1s linear;
+}
+
+                    /*titles and button*/
+
+.intro__titles{
+  width: 100%;
+  max-width: 850px;
+  margin:0 auto;
+  text-align: center;
+}
+.creative__title{
+  margin: 0;
+  font-family: 'Kaushan Script';
+  font-size: 72px;
+  font-weight: 400;
+}
+.welcome__title{
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 140px;
+  text-transform: uppercase;
+}
+.welcome__title:after{
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 60px auto 65px;
+}
+.learn_button{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: 3px solid #ffffff;
+}
+.learn_button:hover{
+  background-color: #ffffff;
+  color: #fce38a;
+  transition: color .1s linear;
+}
