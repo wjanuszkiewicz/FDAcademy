@@ -1,0 +1,46 @@
+
+.second__section {
+    padding: 0 0 100px 0;
+}
+.second__section___footer {
+    display: flex;
+    flex-direction: column;
+}
+.items___services {
+    display: flex;
+    flex-direction: row;
+}
+.all___service {
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.service__headers {
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.service__img {
+    max-width: 32px;
+    max-height: 30px;
+    width: 100%;
+    height: 100%;
+}
+.service__wrapper {
+    padding-left: 30px;
+}
+.service__text {
+    max-width: 282px;
+    color: #999999;
+    font-family: "Roboto";
+    font-size: 15px;
+    line-height: 24px;
+}
+.after__line {
+    margin: 50px 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+}
