@@ -135,3 +135,75 @@
 .copyright span {
     color: #f38181;
 }
+
+/*Media*/
+@media screen and (max-height:830px){
+    .last__inst {
+        display: none;
+    }
+    .footer__inst {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer__content {
+        flex-wrap: wrap;
+    }
+    .footer__text {
+        text-align: center;
+    }
+    .footer__forms {
+        width: 80%;
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+    }
+    .footer__inst {
+        margin-top: 30px;
+        width: 80%;
+        text-align: center;
+    }
+    .inst__photo {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 580px) {
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .email__submit {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .follow__us {
+        text-align: center;
+    }
+    .footer__text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .email__input {
+        padding: 10px 100px 10px 10px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+}
+@media screen and (max-width: 320px), screen and (max-height: 375px) {
+    .email__input {
+        padding: 10px 50px 10px 10px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
+    .last__inst {
+        display: none;
+    }
+    .footer__inst {
+        text-align: center;
+    }
+}

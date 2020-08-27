@@ -88,3 +88,55 @@
     transform: rotateZ(-45deg);
     transition: transform 0.3s linear;
 }
+
+                            /*Media*/
+
+@media screen and (max-width:1200px){
+    .blond_man__img{
+        width: 45%;
+        margin: 0 30px;
+    }
+    .accordion{
+        width: 45%;
+    }
+}                            
+@media screen and (max-width:768px){
+    .forth__section{
+        padding: 0 0 70px 0;
+    }
+    .what_we__do{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .blond_man__img{
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .accordion{
+        width: 70%;
+    }
+}                            
+@media screen and (max-width:425px){  
+  .accordion__opener{
+      padding: 15px 15px 15px 60px;
+      font-size: 12px;
+  }
+  .accordion__content{
+      font-size: 13px;
+      line-height: 20px;
+  }
+} 
+@media screen and (max-width:375px){  
+    .accordion__icon{
+        width: 26px;
+        height: 26px;
+    }
+  .accordion__opener{
+      font-size: 11px;
+  }
+  .accordion__content{
+      font-size: 12px;
+      line-height: 18px;
+  }
+} 
+                           

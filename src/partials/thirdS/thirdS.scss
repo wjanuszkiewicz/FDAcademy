@@ -21,3 +21,41 @@
     transform: translate3d(-78%, 0, 0);
     z-index: 10;
 }
+
+                             /*Media*/
+
+@media screen and (max-width:768px) {
+    .iphone{
+        width: 240px;
+        height: 420px;
+        bottom: -15%;
+        left: 85%;
+    }
+}
+@media screen and (max-width:425px) {
+    .ipad{
+        max-width: 250px;
+        max-height: 360px;
+    }
+    .iphone{
+        width: 140px;
+        height: 250px;
+        left: 85%;
+    }
+}
+@media screen and (max-width:375px) {
+    .iphone{
+        left: 89%;
+    }
+}
+@media screen and (max-width:320px) {
+    .ipad{
+        max-width: 230px;
+        max-height: 340px;
+    }
+    .iphone{
+        width: 120px;
+        height: 220px;
+        left: 92%;
+    }
+}

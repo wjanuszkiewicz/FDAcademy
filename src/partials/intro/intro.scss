@@ -159,7 +159,22 @@
         font-size: 120px;
     }
 }
+@media screen and (max-height:830px){
+    .creative__title{
+        font-size: 40px;
+    }
+    .welcome__title{
+        font-size: 75px;
+        line-height: 60px;
 
+        &::after{
+        margin: 20px auto 30px;
+        }
+    }
+    .learn_button{
+      padding: 10px 25px;  
+    }
+}
 @media screen and (max-width: 768px) {
     /*Burger*/
     ul {
@@ -203,7 +218,22 @@
         font-size: 100px;
     }
 }
+@media screen and (max-height:670px){
+    .creative__title{
+        font-size: 40px;
+    }
+    .welcome__title{
+        font-size: 65px;
+        line-height: 50px;
 
+        &::after{
+        margin: 20px auto 30px;
+        }
+    }
+    .learn_button{
+      padding: 10px 25px;  
+    }
+}
 @media screen and (max-width:425px){
     /*Intro Title*/
     .welcome__title{
