@@ -14,8 +14,8 @@
 /*header nav*/
 
 .header {
-    width: 100%;
     max-width: 1200px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -141,7 +141,6 @@
 
 @media screen and (max-width: 1200px) {
     /*Header*/
-
     .mogo__logo {
         margin-left: 30px;
     }
